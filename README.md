@@ -1,2 +1,4 @@
 # Guessing-game_1
-#test
+---
+permalink: /index.html
+---
