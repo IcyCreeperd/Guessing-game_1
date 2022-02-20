@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Guessing Game</title>
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style_guessNumber.css">
+
+</head>
+
+<body>
+   <div class="container">
+
+       <!--Introduction-->
+       <h1>Guessing Game</h1>
+       <h2>Guess a number between 1-100.</h2>
+
+       <!--Button-->
+       <input type="text" placeholder="Number" id="guess"><br>
+       <button onclick="play()" id="button1">GUESS</button>
+       <button onclick="reset()" id="button2">RESET</button>
+
+       <!--Output-->
+       <p id="message1">Number Of Guesses: 0</p>
+       <p id="message2">Guessed Numbers: </p>
+       <p id="message3"></p>
+
+   </div>
+
+   <!--Script-->
+   <script src="script_guessNumber.js"></script>
+
+</body>
+</html>
