@@ -32,7 +32,6 @@ function play(){
             msg2.textContent = "The number was: " + answer;
             msg3.textContent = "You guessed it in "+ no_of_guesses + " guesses";
             document.getElementById("button1").disabled = true;
-            document.getElementById("button2").disabled = true;
         }
     }
 }
