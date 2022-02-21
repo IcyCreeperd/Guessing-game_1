@@ -1,9 +1,9 @@
-var msg1 = document.getElementById("message1");
-var msg2 = document.getElementById("message2");
-var msg3 = document.getElementById("message3");
+var message1 = document.getElementById("message1");
+var message2 = document.getElementById("message2");
+var message3 = document.getElementById("message3");
 
 var answer = Math.floor(Math.random() * 101);
-var no_of_guesses = 0;
+var number_of_guesses = 0;
 var guessed_nums = [];
 
 function play(){
@@ -13,24 +13,24 @@ function play(){
     }
     else{
         guessed_nums.push(user_guess);
-        no_of_guesses = no_of_guesses + 1;
+        number_of_guesses = number_of_guesses + 1;
 
         if(user_guess < answer){
-            msg1.textContent = "Too low!";
-            msg2.textContent = "Guesses: " + no_of_guesses;
-            msg3.textContent = "Guessed numbers: " +
+            message1.textContent = "Too low!";
+            message2.textContent = "Guesses: " + number_of_guesses;
+            message3.textContent = "Guessed numbers: " +
             guessed_nums + ", " + " " ;
         }
         else if(user_guess > answer){
-            msg1.textContent = "Too high!";
-            msg2.textContent = "Guesses: " + no_of_guesses;
-            msg3.textContent = "Guessed numbers: " +
+            message1.textContent = "Too high!";
+            message2.textContent = "Guesses: " + no_of_guesses;
+            message3.textContent = "Guessed numbers: " +
             guessed_nums + ", " + " ";
         }
         else if(user_guess == answer){
-            msg1.textContent = "You Win!";
-            msg2.textContent = "The number was: " + answer;
-            msg3.textContent = "You guessed it in "+ no_of_guesses + " guesses";
+            message1.textContent = "You Win!";
+            message2.textContent = "The number was: " + answer;
+            message3.textContent = "You guessed it in "+ no_of_guesses + " guesses";
             document.getElementById("button1").disabled = true;
         }
     }
